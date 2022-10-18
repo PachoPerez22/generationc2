@@ -5,24 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>condicionales</title>
+    <title>Formulario</title>
 </head>
 
 <body>
     <script>
-        //condicionales
-        /*La sentencia if
-        *validar o comprobar algo para tomar alguna
-        decision.
-        *Si la condicion es verdadera
-        ingresara al if {}
-        
+        //se pregunta la edad para proceder con las demás preguntas
 
-        if(condicion){
+        var edad = parseInt(prompt("ingresa tu edad", 0));
 
+        // se realiza la validacion de edad , si este es mayor, le dejará entrar, si es menor de edad, lo echará 
+
+        if (Number.isInteger(edad)) {
+
+            if (edad >= 18) {
+
+                //se establece las demás variables
+
+                var nombre = prompt("Ingresa tu nombre.");
+                var apellido = prompt(nombre + ", Ingresa tu Apellido.");
+                var direccion = prompt(nombre + ", ingresa tu dirección.");
+                var correo = prompt(nombre + ", Ingresa tu correo.");
+                var numero = prompt(nombre + ", Ingrese su número telefonico.");
+
+                //se abre el menú
+
+                document.write("<h1/>" + "Bienvenido " + nombre + apellido + "</h1>");
+                document.write("<br>");
+                document.write("*****************************");
+                document.write("<br>");
+                document.write("<br>");
+                document.write("<h3/>" + "tu dirección es " + direccion + ", tu edad es " + edad + ", tu correo es " + correo + "y su número telfonico es " + numero + "." + "</h3>");
+                document.write("<br>");
+                document.write("<br>");
+                document.write("*****************************");
+
+            } else {
+
+                document.write(" Lo siento no puedes registrarte, eres menor de edad!");
+                document.write(" prohibido ingresar al sistema");
+            }
+
+        } else {
+            alert("Invalido! Ingrese un caracter númerico");
         }
-        */
     </script>
 </body>
-
-</html>
