@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bucle while</title>
+</head>
+
+<body>
+    <script>
+        //WHILE
+        /*
+        while(condicion){
+
+        }
+        */
+        /*
+        while(true){
+            hero.moveUp();
+            hero.moveRight();
+        }
+            */
+
+        var contador = 0; //definir variable
+        while (contador <= 5) { //Validando, mientras sea verd entra al while
+            console.log("Somos Bacanes los washituring!!");
+            contador++; //sumar uno a la variable contador
+
+        }
+
+        //contador = 0
+        //for= Bueno cuando queremos repetir un ciclo y -->
+        //-->conocemos el numero de veces a realizar
+        //while= Solo hasta que repita una condicion.
+        //while= Mientras sea verdadero se repite el bucle
+        //== para comparar
+        //= par asignar un valor
+
+        var termino = true; //variable boobleana (true o false)
+        var contador = 10;
+        console.log("contador", contador);
+        //termino, cuando llegue a ==200
+
+        while (termino) {
+            console.log("contador", contador);
+            contador = contador + 10;
+
+            if (contador == 200) {
+                termino = false
+                console.log("contador", contador)
+            }
+        }
+    </script>
+</body>
+
+</html>
