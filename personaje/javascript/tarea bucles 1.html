@@ -29,7 +29,7 @@
         var suma = 0
         while (contador <= 1000) {
             console.log(contador);
-            contador = (contador + 2) + 1
+            contador = (contador + 2)
             suma = suma + contador
         }
         console.log("el total de la suma de los numeros pares es" + suma);
@@ -40,7 +40,7 @@
         var suma = 0
         while (contador <= 5000) {
             console.log(contador);
-            if (contador / 2 = 0); {
+            if (contador / 2 == 0); {
                 contador = contador + 1
                 suma = suma + contador
 
@@ -60,15 +60,24 @@
 
         //4. Itera un array: Escribe un programa que devuelva la suma de todos los valores 
 
-
+        //opcion para la mas largas
         var num = [-5, 1, 1, 4]
         var suma_total = 0
         for (let i = 0; i < num.length; i++) {
             suma_total = suma_total + num[i]
-                //console.log(suma_total); 
+            console.log(suma_total);
 
 
         }
+        console.log(suma_total);
+
+        //opcion para cortos
+        var arreglo4 = [1, 2, 3, 5, 6]; //{[2]
+        console.log('el arreglo es: ', arreglo4);
+        document.write('el arreglo es: ', arreglo4);
+        document.write('<br>')
+        console.log('la suma de los valores en arreglo es: ', arreglo4[0] + arreglo4[1] + arreglo4[2] + arreglo4[3] + arreglo4[4]);
+        document.write('la suma de los valores en arreglo es: ', arreglo4[0] + arreglo4[1] + arreglo4[2] + arreglo4[3] + arreglo4[4]);
     </script>
 </body>
 
