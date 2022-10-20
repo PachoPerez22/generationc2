@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolucion en clase</title>
+</head>
+
+<body>
+    <script>
+        /*Don José todos los martes y jueves realiza un 20% de descuento en el total de las compras, 
+                                crea una función la cual debe recibir un parámetro del día y 
+                                el arreglo de valores de los productos a comprar, 
+                                esta debe retornar el total final de la compra según corresponda o no descuento*/
+        var dia = "Martes"; //"LUNES"//1=lunes.. 2=martes y 4=jueves ; MaRtEs -> martes
+        dia = dia.toLowerCase();
+        var productos = [1000, 500, 650, 8000]; //10150
+
+        function calculoTotalCompra(pDia, pValoresProductos) { //pDia="lunes";pValoresProductos=[1000,500,650,8000];
+            var totalFinalCompra = 0;
+            var sumaProductos = 0;
+            for (let i = 0; i < pValoresProductos.length; i++) {
+                sumaProductos = sumaProductos + pValoresProductos[i];
+            }
+            if (pDia.toLowerCase() == "martes" || pDia.toLowerCase() == "jueves") {
+                totalFinalCompra = sumaProductos - (sumaProductos * 0.2) //10150-10150*0.2 o sumaProductos*0.8
+                    //totalFinalCompra =sumaProductos*0.8
+            } else {
+                totalFinalCompra = sumaProductos;
+            }
+
+            return totalFinalCompra;
+        }
+        var total = calculoTotalCompra(dia, productos);
+        console.log("El total de la compra es", total);
+
+        /*Don jose hace un descuento de 5% de deescuento a los clientes
+        que compran mas de 3 productos y al menos uno de ellos tiene un 
+        valor mayor a 10.000...
+        realiza una funcion que calcule el total verificando si corresponde
+        o no el descuento.*/
+
+        var cantidad = productos.length; //3 es el array, 3 productos.
+
+        /*Dado el siguiente arreglo [200, 5500, 900, 508, 300]
+        con los valores de cada producto.
+        ++Crea una funcion que retorne el valor del producto mas costoso
+        ++Crea una funcion que retorne el valor del producto menos costoso*/
+    </script>
+</body>
+
+</html>
