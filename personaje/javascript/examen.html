@@ -14,10 +14,26 @@
         //Crea una función que retorne el valor del producto más costoso.
         //Crea una función que retorne el valor del producto menos costoso.
 
-        var arreglo = [200, 5500, 900, 7000, 500, 300];
+        var areglo = [200, 5500, 900, 7000, 500, 300];
+        console.log(arreglo);
+        var numMayor = 0;
+        for (let i = 0; i <= arreglo.length; i++) {
+            if (array[i] > numMayor) {
+                numMayor = array[i];
+            }
+        }
 
-        let maxArreglo = Math.max(arreglo)
-        console.log(maxArreglo)
+        console.log('el mayor numero del arreglo;', numMayor);
+
+        var numMenor = 0;
+        for (let i = 0; i <= arreglo.length; i++) // 
+        {
+            if (arreglo[i] < numMenor) {
+                numMenor = array[i];
+            }
+        }
+
+        console.log('El menor numero del arreglo;', numMenor);
     </script>
 </body>
 
