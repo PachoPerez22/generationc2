@@ -13,13 +13,46 @@
 
         var numero_impar = 1;
 
-        function imprimirImpar(impar) {
+
+        function imprimirImpar(impar) // impar = 1 (resultado de imprimirImpat(numero_impar)
+        {
             console.log("impar", impar);
             console.log("numero_impar", numero_impar);
-            numero_impar = 3;
+            numero_impar = 3; //sobre escribir
         }
-        imprimirImpar(numero_impar);
+        imprimirImpar(numero_impar); //imprimirImpar(1)
         console.log("nuevo numero_impar", numero_impar);
+
+        //retorno
+
+        var numero_impar = 2;
+
+        function sumaNumeros() {
+            console.log(numero_impar + 4) //console.log(3+4)
+            return numero_impar + 4;
+        }
+        var numeroRetornado = sumaNumeros(); //llamado a la funcion
+        //var numeroRetornado = 7;
+        console.log("numeroRetornado", numeroRetornado);
+
+        //////////////////
+
+        function SumaImpar() {
+            return 3 + 5
+        }
+        var impares = sumaImpar();
+        console.log("suma Impares", impares) //8
+        console.clear(); /// de aqui para arriba no se imprime
+
+        console.log("**************************")
+
+        function multiplacion(numero1, numero2) {
+            let multiplacion = numero + numero2;
+            return multiplicacion = numero1 * numero2;
+        }
+
+        var resultadoMultiplacion = multiplacion(34, 76); //estos numeros pueden ser cualquiera
+        console.log("El resultado es", resultadoMultiplacion); //el resultado son la multiplcacion de los numeros de arriba
     </script>
 </head>
 
