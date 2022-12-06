@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos CSS</title>
+    <style>
+        /*Eliminar o resetear las distancia entre los elementos*/
+        
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        /*Estamos dentro de la etuqeta style*/
+        /*tes formas de asignar estilos*/
+        /*Estilo a todos los elementos*/
+        /*1- A traves del elemento(Etiqueta div y p)*/
+        
+        p {
+            color: blue;
+            background-color: black;
+        }
+        
+        div {
+            color: red;
+            background-color: yellow;
+            width: 100px;
+            /*Agrega ancho*/
+            height: 100px;
+            /*Agrega altura*/
+        }
+        
+        a {
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 25px;
+            font-family: 'Franklin Gothic Medium';
+        }
+        /*---------2- A traves de las clases---------*/
+        /*Añadir estilos a una o mas elementos*/
+        
+        .parrafo23 {
+            color: purple;
+            /*!important*/
+            background-color: grey;
+        }
+        /*-------3- A traves del Id # */
+        /* El estilo solose aplica a 1 elemento*/
+        
+        #parrafo4 {
+            color: brown;
+            background-color: orange;
+        }
+        
+        #padre {
+            background-color: coral;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            padding: 280px;
+            padding-bottom: 290px;
+        }
+        
+        #hijo {
+            background-color: hotpink;
+            width: 40px;
+            height: 40px;
+        }
+        
+        #hijo2 {
+            background-color: hotpink;
+            width: 40px;
+            height: 40px;
+            margin: 100px;
+        }
+        
+        #hijo3 {
+            background-color: hotpink;
+            width: 40px;
+            height: 40px;
+            margin: 150px;
+        }
+        
+        #hijo4 {
+            background-color: hotpink;
+            width: 150px;
+            height: 40px;
+            margin: 140px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Parrafo 1</p>
+        <p class="parrafo23">parrafo 2</p>
+        <p class="parrafo23">parrafo 3</p>
+        <p id="parrafo23" id="parrafo4">Parrafo 4</p>
+        <a href="http://www.sii.cl">visite sii</a>
+
+
+    </div>
+    <br>
+    <h2>marging y padding</h2>
+
+    <div>
+        <div id="padre">
+            <div id="hijo"></div>
+            <div id="hijo2"></div>
+            <div id="hijo3"></div>
+            <div id="hijo4"></div>
+
+
+        </div>
+
+
+
+
+    </div>
+
+</body>
+
+</html>

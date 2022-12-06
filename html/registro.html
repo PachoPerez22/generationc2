@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+
+<body>
+
+    <!-- Action=ruta para enviar la informacon al backend-->
+    <!-- method = forma como se envia la info(get y post)-->
+    <!-- Get pasamos parametros por la url(muestra)-->
+    <!-- Post no muestra parametros(oculto)-->
+    <form action="ruta" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido">
+        <br>
+        <label for="correo">Email:</label>
+        <input type="email" id="correo" name="correo" placeholder="ingrese email">
+        <br>
+        <label for="password"> Ingrese Password:</label>
+        <input type="password" id="password" name="password" placeholder="ingrese password">
+        <br>
+        <input type="submit" value="enviar">
+
+    </form>
+
+
+</body>
+
+</html>
