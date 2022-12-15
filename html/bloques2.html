@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica CSS</title>
+    <!--<link rel="stylesheet" type="text/css" href="bloques.css">-->
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        #wrapper {
+            width: 950px;
+            background-color: grey;
+            margin: 0px auto;
+            padding: 15px;
+        }
+        
+        #header {
+            min-height: 150px;
+            background-color: purple;
+            margin-bottom: 15px;
+        }
+        
+        #navigation {
+            min-height: 300px;
+            width: 200px;
+            background-color: pink;
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 15px;
+        }
+        
+        #main_content {
+            min-height: 400px;
+            width: 700px;
+            background-color: blue;
+            display: inline-block;
+            padding: 15px;
+        }
+        
+        .subcontents {
+            min-height: 200px;
+            width: 210px;
+            background-color: yellow;
+            display: inline-block;
+            margin-right: 15px;
+        }
+        
+        #advertisement {
+            min-height: 120px;
+            width: 660px;
+            background-color: green;
+            margin-top: 15px;
+        }
+
+        /*Celular*/
+        @media screen and (max-width: 480px) {
+            #navigation{
+                display: none;
+            }
+            #wrapper{
+                width: 100%;
+            }
+            #main_content{
+                width: 95%;
+            }
+
+            .subcontents {
+            width: 95%;
+            margin-bottom: 15px;
+        }
+        #advertisement {
+            width: 95%;
+            margin-top: 0px;
+        }
+            /*tablets*/
+        }
+            @media screen and (min-width: 481px) and (max-width: 1023px) {
+            #navigation{
+                display: none;
+            }
+            #wrapper{
+                width: 100%;
+            }
+            #main_content{
+                width: 95%;
+            }
+            #advertisement {
+            width: 100%;
+            margin-top: 15px;
+        }
+        .subcontents {
+            width: 47%;
+            margin-bottom: 15px;
+            margin-right: 10px;
+            }
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header"></div>
+        <div id="navigation"></div>
+        <div id="main_content">
+            <div class="subcontents"></div>
+            <div class="subcontents"></div>
+            <div class="subcontents"></div>
+            <div id="advertisement"></div>
+        </div>
+    </div>
+</body>
+
+</html>

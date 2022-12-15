@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <style>
+
+        .container{
+            background-color: gray;
+            height: 100%;
+            border: 5px solid;
+        }
+        .divclass{
+            width: 20%;
+            height: 20%;
+            display: inline-block;
+        }
+        #div1{
+            background-color: blue;
+            
+        }
+        
+        #div2{
+            background-color: green;
+        
+        } 
+        #div3{
+            background-color: purple;   
+        }
+
+        /*Celular*/
+        @media screen and (max-width: 480px) {
+            .divclass{
+            width: 80%;
+            height: 80%;
+            display: inline-block;
+            background-color: rgb(255, 255, 255) !important;
+        }
+}
+/*tablets*/
+@media screen and (min-width: 481px) and (max-width:1023px) {
+    .divclass{
+            width: 50%;
+            height: 50%;
+            display: inline-block;
+            background-color: brown;
+        }
+}
+/*desk*/
+@media screen and (min-width: 1024px) {
+    .divclass{
+            width: 50%;
+            height: 50%;
+            display: inline-block;
+            background-color: rgb(16, 145, 117);
+        }
+}
+</style>
+</head>
+<body>
+    <div class="container">
+<div id="div1"  class="divclass"><p>Parrafo 1</p></div>
+<div id="div2"  class="divclass"><p>Parrafo 2</p></div>
+<div id="div3"  class="divclass"><p>Parrafo 3</p></div>
+
+    </div>
+</body>
+</html>
