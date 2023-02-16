@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicando JS</title>
+</head>
+<body>
+    <script>
+// Para instanciar obejetos
+
+function persona2(nombre,apellido, calle){
+    this.nombre=nombre;
+    this.apellido=apellido;
+    this.calle=calle
+    this.hablar= function(){console.log("Hola soy" + " " + this.nombre +" "+ "mi apellido es "+ " "+this.apellido )}
+}
+
+const persona1 = new persona2("francisco","perez","ñuñoa");
+
+persona1.hablar();
+
+// Operador In y for in
+
+// clases y constructores
+
+class producto{
+    constructor (nombre, precio){
+        this.nombre = nombre.toUpperCase();
+        this.precio = parseFloat(precio);
+        this.vendido = false;
+    }
+    sumaIva(){
+        this.precio = this.precio * 1.21;
+    }
+    vender(){
+        this.vendido = true;
+    }
+}
+
+const producto1 = new producto("arroz","125");
+const producto2 = new producto("papa","50");
+
+producto1.sumaIva();
+producto2.sumaIva();
+producto1.vender();
+//producto2.vender();
+
+console.log(producto2.vendido);
+
+
+    </script>
+</body>
+</html>
