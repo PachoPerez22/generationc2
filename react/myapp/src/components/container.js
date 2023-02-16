@@ -13,7 +13,7 @@ render(){//agregamos render, luego el return y alli agregamos <> o <div></div>
         <h1>Personajes Favoritos</h1>
         <Elementos titulo1="Acerca de" contenido="Esta es kelly" className="elementos"/>
         <Elementos titulo1="Acerca de" contenido="Este es jim" className="elementos"/>
-        <Elementos titulo1="Acerca de" contenido="Este es Duhue" className="elementos"/>
+        <Elementos titulo1="Acerca de" contenido="Este es Dwight" className="elementos"/>
         
         <Verde/>
         </div>
