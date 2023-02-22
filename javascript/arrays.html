@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Arrays
+        // Array, especificar psocion, y operaciones basicas.
+        const numero = [1,2,3,4,5];
+        console.log (numero[0]) //1
+        console.log (numero[3]) //4
+
+        let resultado = numero[1] + numero[2];
+        console.log(resultado);
+        
+        //------------------------------------------
+
+        //Recorrido del array
+
+        const numeros = [1,2,3,4,5];
+        for (let index = 0; index < 5; index++){ //Se refiere a laposicion en el array
+           // alert(numeros[index]); //index numeros.length, otras forma
+        }
+        console.log(numeros.length);
+
+
+        //LENGTH para ver el array
+
+        //Agregar elemento al array Con PUSH (al final del array)
+
+        numeros.push(7);
+        console.log(numeros)
+
+        // Agregar al principio del array (Unshift)
+
+        numeros.unshift(8);
+        console.log(numeros)
+
+        //Para quitar elementos al principio (shift)
+
+        numeros.shift();
+        console.log(numeros)
+
+        //Para quitar elementos del array al final (pop)
+        numeros.pop();
+        console.log(numeros)
+        console.log("------------------------")
+
+        //Splice -------- --------------- ------------
+
+        //eliminar elementos (varios) del array, hay que colocar las posiciones
+        numeros.splice(1,2);
+
+        //JOIN ----------------------------
+        //Para ordenar (dividir) los elementos del arreglo en un string (, /, *)
+
+        console.log(numeros.join("/"));
+
+
+        //CONCAT ---------------------------
+        //Unir en un array los elementos de dos arrays o mas
+
+        const perros = ["perri", "porro","puppy"]
+        const gatos = ["mishi", "mascha", "chichi"]
+
+        const mascotas = perros.concat(gatos)
+
+        console.log(mascotas)
+
+        // SLICE  crear array con los valores que quieras exluyendo el ultimo-------------------------
+
+        const favoritos = perros.slice(0,2);
+        console.log(favoritos); //perri y porro, no incluye el pos 2
+
+        // INCLUDES -- Arroja un bolean si esta ese elemnto
+
+        console.log(favoritos.includes("porro")); //True
+        console.log(favoritos.includes("perro")); // false
+
+        //Reverse -------------
+        //Revierte el arreglo y lo devuelve al reves
+
+        console.log(numero.reverse());
+        
+        // INDEXOF ---------------------------
+        // Devuelve la poscion del elemento en el array
+
+        console.log(perros.indexOf("porro"));
+        console.log(gatos.indexOf("chichi"));
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

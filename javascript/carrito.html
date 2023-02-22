@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Carrito de compras</title>
+	<link rel="stylesheet" type="text/css" href="carrito.css">
+</head>
+<body>
+	<header>
+		<h1>Carrito de compras</h1>
+	</header>
+	<main>
+		<section>
+			<h2>Productos en tu carrito</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Producto</th>
+						<th>Cantidad</th>
+						<th>Precio unitario</th>
+						<th>Precio total</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Producto 1</td>
+						<td><input type="number" min="1" value="1"></td>
+						<td>$10.00</td>
+						<td>$10.00</td>
+					</tr>
+					<tr>
+						<td>Producto 2</td>
+						<td><input type="number" min="1" value="2"></td>
+						<td>$20.00</td>
+						<td>$40.00</td>
+					</tr>
+					<tr>
+						<td>Producto 3</td>
+						<td><input type="number" min="1" value="1"></td>
+						<td>$15.00</td>
+						<td>$15.00</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="3">Total:</td>
+						<td>$65.00</td>
+					</tr>
+				</tfoot>
+			</table>
+		</section>
+		<section>
+			<h2>Finalizar compra</h2>
+			<form>
+				<label for="nombre">Nombre:</label>
+				<input type="text" id="nombre" name="nombre" required>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="direccion">Dirección:</label>
+				<input type="text" id="direccion" name="direccion" required>
+				<label for="tarjeta">Tarjeta de crédito:</label>
+				<input type="text" id="tarjeta" name="tarjeta" required>
+				<button type="submit">Comprar</button>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Mi tienda en línea</p>
+	</footer>
+</body>
+</html>

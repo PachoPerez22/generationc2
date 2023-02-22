@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+
+        // MAP Elemento para recorrer el array y modificar elementos dentro del array y los lanza en otro array
+
+        const perros = [1,2,3,4,5,5]
+       // const perritos = perros.map((favoritos) => favoritos * 2);
+        const numeros = perros.map((elemento) => elemento / 2)
+        console.log(numeros);
+
+
+        // FILTER Para recorrer el array y muestras los elementos que cumplen la condicion
+
+        const arroz = perros.filter(element => element === 5 || element === 2 )
+        console.log(arroz);
+
+        // For EACH ---- Recorrer el array y decirte la poscion de cada elemento
+
+        const frutas = ["banana", "durazno", "guanabana", "patilla", "piña"]
+        const resultadoFrutas = frutas.forEach((fruti, i) => {
+            console.log(`${fruti} ${i}`)
+        })
+
+        // FIND recorre el array y retorna la primera concidencia segun la codicion
+        //El primero que encuentre
+
+        const encontrar = perros.find((elemento) => elemento <5 ); //
+        console.log(encontrar);
+
+        //SORT Ordena elementos del array y retorna el arreglo ordenado
+
+        const array = [1,2,3,4,5,6,7]
+        const alfabeto = ["a","b","c","d"]
+
+        // const ascendente = array.sort((a,b) => a=b ? -1 : 1);
+        // const descendente = alfabeto.sort((a,b) => a>b ? 1 : -1);
+
+        // console.log(ascendente); 
+        // console.log(descendente);
+
+
+        // SOME Retorna parecido al find pero en boolean True o flase
+
+        const trueofalse = array.some((elemento) => elemento === 3)
+        console.log(trueofalse)
+
+
+        // EVERY Similar al some, lo mismo al SOME pero retorna true o false si todos coinciden en la condicion
+
+        const truex = array.every((elemento) => elemento >= 3)
+        console.log(truex)
+
+        // Reduce te hace una opreacion con todos los elementos del array (suma, resta, division etc)
+
+        const reduce = array.reduce((elemento, perro) => elemento*perro );
+
+        console.log(reduce, "reduce")
+
+        //FILL Para rellenar con un numero y desde cierta posicion
+
+        const rellena = array.fill(9,2);
+        console.log (rellena)
+
+        // LASTINDEXOF Investigra porque no funciona
+
+        const cuenta = frutas.lastIndexOf("patilla");
+
+        console.log(frutas.lastIndexOf("patilla"));
+        
+        // FROM -------------------------------
+
+        const pacho = Array.from("esternocleidomastoideo");
+        console.log(pacho);
+
+    
+
+    
+
+    </script>
+</body>
+</html>
