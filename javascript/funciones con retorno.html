@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// RETORNAR con FUNCIONES ---------------------
+function mayorQue(n){
+    return(m) => m > n
+}
+
+let mayorQueDiez = mayorQue(10)
+
+console.log(mayorQueDiez(12))
+console.log(mayorQueDiez(9))
+
+
+//  FUNCIONES DE ORDEN SUPERIOR-----------------
+// recibir funciones
+
+const num3 = [1,2,3,4,5]
+
+function por2 (a){
+return console.log(a*2);
+
+}
+
+
+function resultado (arr, fn){
+    for (let x of arr){
+    fn(x);
+    }
+    
+}
+resultado(num3, por2);
+
+
+// ARROW funcion -------------------
+
+// const duplicado = []
+// duplicado (numero, (el)=> {
+//     duplicado.push(el * 2)
+//      return console.log()
+// }) Control mas cierre de corhete
+
+// -------FOR EACH recorre los elementos de array y hace una funcion con cada uno--------------------
+
+const num4 = [1,2,3,4,5]
+
+num4.forEach((x) => console.log(x*5));
+
+
+// FIND recibe una funcion de comparacion-------
+
+num4.find((x) => x === 3);
+
+//FILTER-----------------------------
+
+const num5 = num4.filter((x) => x === 4)
+console.log(num5);
+
+
+//SOME ------------------------
+
+console.log(num4.some((x) => x ===7))
+
+
+// MAP ___________________________
+
+const nume = [
+    {nombre : "perro", edad:43},
+    {nombre : "gato", edad :9}
+]
+
+const nombre = nume.map((p) => p.nombre);
+console.log("estas son mis mascotas " + " " +nombre);
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -8,7 +8,7 @@
 </head>
 <body>
     <script>
-// Para instanciar obejetos
+// Para instanciar objetos
 
 function persona2(nombre,apellido, calle){
     this.nombre=nombre;
@@ -48,6 +48,48 @@ producto1.vender();
 //producto2.vender();
 
 console.log(producto2.vendido);
+
+//__________________________________________-
+
+class bebidas {
+    constructor (sabor, precio){
+        this.precio = precio;
+        this.sabor = sabor;
+        this.bebido = true;
+    }
+    beber(){
+
+    console.log("fui bebido " + this.bebido)
+    }
+}
+
+const bebida1 = new bebidas ("coca", "130");
+
+bebida1.beber();
+console.log(bebida1.beber());
+
+
+// OBJETO REPASOS --------------------------------
+
+function Persona (nombre, edad, calle){
+    this.nombre =nombre;
+    this.edad= edad;
+    this.calle= calle;
+}
+
+const persona11 = new Persona ({nombre: "pacho", edad :"25", calle :"tres 123"})
+console.log(persona11);
+
+
+// Operadores FOR IN
+
+console.log("nombre" in persona11);
+console.log("apellido" in persona11);
+
+
+// Clases y metodos -----------------------
+
+
 
 
     </script>
